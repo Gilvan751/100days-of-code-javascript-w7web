@@ -1,0 +1,1 @@
+document.write(" Esse é o inicio do DOM");
