@@ -176,26 +176,29 @@ iniciando pelo índice, então todos os elementos até o fim da lista serão del
 0, nenhum elemento é removido. Neste caso você deve especificar pelo menos um novo elemento.
 elemento1, ..., elementoN: Os elementos a adicionar na lista. Se você não especificar nenhum
 elemento, splice simplesmente removerá elementos da mesma.
-Com todos esses parâmetros para se trabalhar o céu é o limite, vejamos o caso simples primeiro:
+Com todos esses parâmetros para se trabalhar o céu é o limite, vejamos o caso simples primeiro:*/
 var nomes = ["Bruno", "Felipe", "Douglas"];
-nomes.splice(1); // parâmetro deleteCount não foi específicado - todos os
-elementos a partir do 1 serão apagados.
+nomes.splice(3,0, "Manoel","Justino"); // parâmetro deleteCount não foi específicado - todos os
+//elementos a partir do 1 serão apagados.
 console.log(nomes);
 // → ["Bruno"]
-Ou:
+//Ou:
 var nomes = ["Bruno", "Felipe", "Douglas"];
 nomes.splice(1, 1); // parâmetro deleteCount foi específicado - 1 elemento
-após a posição 1 será apagado.
+//após a posição 1 será apagado.
 console.log(nomes);
 // → ["Bruno", "Douglas"]
-Ou então:
+//Ou então:
 var nomes = ["Bruno", "Felipe", "Douglas"];
 nomes.splice(1, 1, "Zezinho", "Fulano"); // parâmetro deleteCount foi
-específicado - 1 elemento após a posição 1 será apagado. E também o
-elemento "Zedinho" e "Fulano" serão na posição especificada.
+//específicado - 1 elemento após a posição 1 será apagado. E também o
+//elemento "Zedinho" e "Fulano" serão na posição especificada.
 console.log(nomes);
 // → ["Bruno", "Zezinho", "Fulano", "Douglas"]
-Maneiro!
+var nomes = ["Bruno", "Felipe", "Douglas"];
+nomes.splice(0, 0, "Pedro", "Manoel", "Justino");
+console.log(nomes);
+/*Maneiro!
 O método indexOf
 Vamos supor que você quer encontrar a posição de um elemento específico, por exemplo, o "Fulano" na lista
 de convidados.
@@ -269,7 +272,7 @@ tranquilamente!
 Desafio
 Com o conceito de array em mente, implemente na sua calculadora o cálculo de média aritmética.
 Resposta*/
-var numeros = [];
+/*var numeros = [];
 while(true) {
  var numero = prompt("Digite um número ou S para sair");
  if (numero == 'S') {
@@ -283,4 +286,4 @@ for (i = 0;i < numeros.length;i++) {
  soma += numeros[i];
 }
 var resultado = soma / numeros.length;
-console.log(resultado); 
+console.log(resultado); */
