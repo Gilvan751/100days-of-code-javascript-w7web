@@ -25,7 +25,7 @@ var v1 = Number(prompt("Digite o primeiro valor"));
 var v2 = Number(prompt("Digite o segundo valor"));
 
 alert("Resultado e: " + soma(v1, v2)); */
-function potencia(base, expoente) {
+/* function potencia(base, expoente) {
  if (expoente == 0) {
  return 1;
  } else {
@@ -34,4 +34,16 @@ function potencia(base, expoente) {
  }
 }
 console.log(potencia(2, 3));
-// → 8
+// → 8 */
+function fatorial(n) {
+ if (n == 0) {
+ return 1;
+ }
+ else {
+ return (n * fatorial(n - 1));
+ }
+}
+fatorial(1);
+// → 1
+fatorial(5);
+// → 120
