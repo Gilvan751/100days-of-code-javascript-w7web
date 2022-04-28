@@ -60,4 +60,10 @@ console.log(convidadosNormalizado);
 // → [{nome: "FELIPE", vip: false},
 // {nome: "DANIEL", vip: true},
 // {nome: "JOÃO", vip: true}]
+var identidade = [{ nome: "Padre", vip: false }, { nome: "Manouel", vip: false }, { nome: "pedro", vip: false }, { nome: "gurUpi", vip: false }];
+var consertoNome = identidade.map(function (item) {
+    return Object.assign(item, { nome: item.nome.toUpperCase() });
+});
+
+console.log(consertoNome);
 
