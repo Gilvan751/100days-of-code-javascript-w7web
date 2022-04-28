@@ -34,3 +34,30 @@ var far = cel.map(function (item) {
     return Math.floor((item * 1.8) + 32);
 });
 console.log(far);
+
+var num = [12, 13, 14, 15, 16, 17, 18, 19, 20];
+//var mul = function (item) {
+  //  return item * 5;
+//}
+var dob = num.map(function (item) {
+    return item * 5;
+});
+console.log(dob);
+
+var farenaite = [0, 15, 30, 35, 45, 50, 55, 60, 120, 140];
+var celcios = farenaite.map(function (item) {
+    return Math.round((item * 1.8) + 32);
+});
+//propriedades do Math.floor-> arredonda para o mais proximo,round arredonda para o numero mais proximo,ceil ->retorna o numero >=, sign ->retorna se o numero e positivo ou negativo, trunc -> retorna o numero sem as casas decimais, abs -> retorna ao valor absoluto do numero
+console.log(celcios);
+
+var convidados = [{nome: "felipe", vip: false}, {nome: "danIEl", vip:
+true}, {nome: "João", vip: true}];
+var convidadosNormalizado = convidados.map(function(item) {
+ return Object.assign(item, {nome: item.nome.toUpperCase()});
+});
+console.log(convidadosNormalizado);
+// → [{nome: "FELIPE", vip: false},
+// {nome: "DANIEL", vip: true},
+// {nome: "JOÃO", vip: true}]
+
