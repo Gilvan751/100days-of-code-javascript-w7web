@@ -1,8 +1,19 @@
 body {
     background-color: #f9f9f9;
 }
-button {
-    width: 200px;
-    height: 44px;
-    background-color: blue;
+
+/* .azul {
+    background-color: #00ff;
+    color:#fff;
+}
+.vermelho {
+    background-color: #ff0000;
+    color:#fff;
+}
+.verde {
+    background-color: #00ff00;
+    color:#000;
+} */
+#telefone {
+    display: none;
 }
