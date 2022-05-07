@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="style.css">
+    <title>Evento On click</title>
+</head>
+<body>
+    <h1 id="titulo" onclick="alert('Clicou') ">Seja Bem vindos!</h1>
+    <h2 onmouseover="alert('Passou o mause')">onmauseouver</h2>
+    <!-- Tem jeito de mudar o elemento diretamente no botão ou diretamente dentro da função é só colocar onclick documet-->
+    <!-- <button onclick="document.getElementById('titulo').innerHTML = 'Obrigado Senhor!'">Clique me mim</button> outra maneira e como a abaixo -->
+    <!-- Nesse outro exemplo você coloca this e muda o texto dentro do elemento, lembrando que pode ser passado o comando onclick em qualquer tipo de tag -->
+
+    <button onclick="this.innerHTML = 'Clicou!'">Clique me mim</button>
+    <script src="script.js"></script>
+</body>
+</html>
