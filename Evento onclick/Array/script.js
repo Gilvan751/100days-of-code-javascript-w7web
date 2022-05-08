@@ -8,19 +8,36 @@ let ingredientes = [
 ];
 console.log(ingredientes[1][0]); */
 
-let carro = {
+/* acessar um veiculo por propriedades */
+
+/* let carro = {
     marca: 'Fiat',
     modelo: 'Uno',
     peso: '800kg',
+    ligado:false,
     ligar: function () {
+        this.ligado = true;
+        console.log('Ligando o ' + this.marca+' ' + this.modelo);
         console.log('VRUM VRUM')
     },
     acelerar: function () {
-        console.log("RumRumRumRumRum")
+        if(this.ligado == true){
+            console.log("RumRumRumRumRum")
+        } else {
+            console.log(this.marca +' '+ this.modelo+' '+" não esta ligado");
+        }
     }
 };
-console.log(carro['marca']);
-console.log(carro.marca);
-console.log('peso:'+carro.peso);
+
+console.log('Modelo: '+carro.marca);
+
 carro.ligar();
-carro.acelerar();
+carro.acelerar(); */
+/* um array e dentro dele um objeto */
+let carro = [
+    {nome: 'Fiat', modelo:'Palio'},
+    {nome: 'Fiat', modelo:'Uno'},
+    {nome: 'Toyota', modelo:'Corolla'},
+    {nome: 'Ferrari', modelo:'Spaider'}
+];
+console.log(carro[2].nome);
