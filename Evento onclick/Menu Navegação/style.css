@@ -37,6 +37,6 @@ aside {
     #menu-area li:hover {
         background:#DDD;
     }
-   /*  .menu-opened {
+    .menu-opened {
         width: 200px!important;
-    } */
+    }
