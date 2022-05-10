@@ -10,7 +10,7 @@ function digitou(e) {
 } */
 
 // Mudanças de Estilos
-/* function azul() {
+function azul() {
     limpar();
     document.getElementById('titulo').classList.add('azul');
 }
@@ -27,9 +27,9 @@ function limpar() {
    document.getElementById('titulo').classList.remove('azul'); 
    document.getElementById('titulo').classList.remove('vermelho'); 
    document.getElementById('titulo').classList.remove('verde'); 
-} */
+}
 
-function mostrarTelefone(elemento) {
+/* function mostrarTelefone(elemento) {
     elemento.style.display = "none";
     document.getElementById('telefone').style.display = "block";
-}
+} */
