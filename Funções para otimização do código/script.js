@@ -46,4 +46,6 @@ function fatorial(n) {
 fatorial(1);
 // → 1
 fatorial(5);
+
 // → 120
+fatorial(8);
